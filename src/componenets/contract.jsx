@@ -25,7 +25,7 @@ const ServicesSection = () => {
       <Typography variant="h4" sx={{ fontWeight: 'bold', mb: 4 }}>
         A RANGE OF SERVICES ADAPTED TO YOUR NEEDS
       </Typography>
-      <Grid container spacing={3} justifyContent="center">
+      <Grid container spacing={3} justifyContent="center" >
         {services.map((service, index) => (
           <Grid item xs={12} sm={6} md={4} key={index}>
             <Card sx={{ maxWidth: 350, mx: 'auto', borderRadius: 2, boxShadow: 4, transition: '0.3s',

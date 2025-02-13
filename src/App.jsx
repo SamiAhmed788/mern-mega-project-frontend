@@ -13,7 +13,11 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="#about" element={<AboutUs />} />
       </Routes>
+      <div id="Footer">
       <Footer />
+
+      </div>
+
     </Router>
   );
 };

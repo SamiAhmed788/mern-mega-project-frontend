@@ -17,14 +17,14 @@ const Navbar = () => {
           {/* Logo */}
           <Box component="a" href="#home" sx={{ display: "flex", alignItems: "center", textDecoration: "none", color: "white" }}>
             <DiningSharp />
-            <Typography variant="h6" sx={{ fontWeight: "bold" }}>Event Management</Typography>
+            <Typography variant="h6" sx={{ fontWeight: "bold" }}>DecoEvent Management</Typography>
           </Box>
 
           <Box sx={{ flexGrow: 1 }}></Box>
 
           {/* Desktop Menu */}
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
-            {["Home", "About", "Services", "Contact", "Login"].map((text) => (
+            {["Home", "About", "Services", "Contact", "Team"].map((text) => (
               <Button
                 key={text}
                 sx={{ color: "white" }}
@@ -45,7 +45,7 @@ const Navbar = () => {
       {/* Mobile Drawer Menu */}
       <Drawer anchor="right" open={mobileOpen} onClose={handleDrawerToggle}>
         <List sx={{ width: 250 }}>
-          {["Home", "About", "Services", "Contact", "Login"].map((text) => (
+          {["Home", "Abput", "Services", "Contact", "Team"].map((text) => (
             <ListItem button key={text} component="a" href={`#${text.toLowerCase()}`} onClick={handleDrawerToggle}>
               <ListItemText primary={text} />
             </ListItem>
